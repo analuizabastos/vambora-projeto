@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vambora - Seu filtro de rolês</title>
+    <link rel=stylesheet href="./style.css">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="./imagens/Logo.png">
+            <h2>Vambora</h2>
+        </section>
+        <nav>
+            <ul class="navbar">
+                <li ><a class="nav-link" href="#">Eventos</a></li>
+                <li ><a class="nav-link" href="#">Cultura</a></li>
+                <li ><a class="nav-link" href="#">Minha Conta</a></li>
+                <li><a class="nav-link" href="#">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slogan">
+            <h1>Encontre a sua vibe cultural em Maceió</h1>
+            <form>
+                <div class="busca">
+                    <input type="text" name="busca" placeholder="Qual o evento de hoje?">
+                </div>
+                <div class="filtros">
+                    <input type="date" name="data">
+                    <input type="text" name="local" placeholder="onde?">
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h3>Eventos em destaque</h3>
+            <ul class="eventos">
+                <li ><a class="eventos-link" href="#musica">Musica</a></li>
+                <li ><a class="eventos-link" href="#teatro">Teatro</a></li>
+                <li ><a class="eventos-link" href="#arte">Arte</a></li>
+                <li><a class="eventos-link" href="#gastronomia">Gastronomia</a></li>
+            </ul>
+        </section>
+        <section class="destaques">
+            <div id="musica">
+                <article>
+                    <img src="./imagens/samba.jpeg" alt=" 1"> <h4>Samba no Jaraguá</h4>
+                    <p>Data: 15/11 - Local: Jaraguá</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/rexbar.jpeg" alt=" 2">
+                    <h4>Rock no Rex Bar</h4>
+                    <p>Data: 16/11 - Local: Pajuçara</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/forro.jpeg" alt=" 3">
+                    <h4>Forró Pé de Serra</h4>
+                    <p>Data: 17/11 - Local: Maikai</p>
+                    <button>Ver mais</button>
+                </article>
+            </div>
+            <div id="teatro">
+                <h3>Teatro</h3>
+                <article>
+                    <img src="./imagens/auto da compadecida.webp" alt=" teatro 1">
+                    <h4>O Auto da Compadecida</h4>
+                    <p>Data: 20/11 - Local: Teatro Deodoro</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/standup.jpg" alt=" teatro 2">
+                    <h4>Stand Up Comedy</h4>
+                    <p>Data: 22/11 - Local: Teatro Gustavo Leite</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/danca.webp" alt=" teatro 3">
+                    <h4>Espetáculo de Dança</h4>
+                    <p>Data: 25/11 - Local: Arte Pajuçara</p>
+                    <button>Ver mais</button>
+                </article>
+            </div>
+            <div id="arte">
+                <h3>Arte</h3>
+                <article>
+                    <img src="./imagens/exposicao.jpeg" alt=" 1">
+                    <h4>Exposição Fotográfica</h4>
+                    <p>Data: 10/11 - Local: Museu Théo Brandão</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/pintura.jpg" alt=" 2">
+                    <h4>Mostra de Pintura</h4>
+                    <p>Data: 12/11 - Local: Cesmac</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/artesanato.webp" alt=" 3">
+                    <h4>Feira de Artesanato</h4>
+                    <p>Data: Permanente - Local: Pontal da Barra</p>
+                    <button>Ver mais</button>
+                </article>
+            </div>
+            <div id="Gastronomia">
+                <h3>Gastronomia</h3>
+                <article>
+                    <img src="./imagens/sururu.jpg" alt=" 1">
+                    <h4>Festival do Sururu</h4>
+                    <p>Data: 05/12 - Local: Orla Lagunar</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/foodpark.webp" alt="2">
+                    <h4>Encontro de Food Trucks</h4>
+                    <p>Data: 06/12 - Local: Praça do Skate</p>
+                    <button>Ver mais</button>
+                </article>
+                <article>
+                    <img src="./imagens/camarao.jpg" alt="3">
+                    <h4>Rota do Camarão</h4>
+                    <p>Data: 07/12 - Local: Massagueira</p>
+                    <button>Ver mais</button>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contato</h2>
+                <div class="contact-methods">
+                    <div>
+                        <h3>Fale conosco</h3>
+                        <form method="post">
+                            <input type="text" placeholder="Seu nome" required />
+                            <input type="email" placeholder="Seu email" required />
+                            <input type="tel" placeholder="Seu telefone(opcional)" />
+                            <textarea placeholder="Sua mensagem" required></textarea>,
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3>Nos acompanhe</h3>
+                        <ul class="social-links">
+                            <li><a href="#" title="Siga-nos no Instagram"> <img src="./images/instagram.png" alt="Instagram" /> </a></li>
+                            <li><a href="#" title="Siga-nos no Facebook"> <img src="./images/facebook.png" alt="Facebook" /> </a></li>
+                            <li><a href="#" title="Visite nosso canal no Youtube"> <img src="./images/youtube.png" alt="Youtube" /> </a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Venha até nós</h3>
+                        <p>
+                            Rua JavaScript n 124, Vila HTML - Sao Paulo, SP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Vambora - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
