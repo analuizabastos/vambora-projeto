@@ -163,6 +163,10 @@ form{
     border-radius: 8px;
 }
 
+.destaques div{
+    margin-bottom: 100px;
+}
+
 .destaques h3{
     display: flex;
     width: fit-content;
@@ -322,7 +326,8 @@ footer{
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 640px){
+   
     header{
         flex-direction: column;
         height: auto;
@@ -347,15 +352,10 @@ footer{
         gap: 10px;
         font-size: 20px;
     }
-}
-
-@media (max-width: 480px){
     main{
         padding-top: 30px;
     }
     form {
-        padding: 10px;
-        margin: 10px;
         width: 90%;
     }
 
@@ -365,7 +365,7 @@ footer{
     }
 
     .busca input {
-        width: 100%;
+        width: 90%;
     }
     .filtros{
         flex-direction: column;
@@ -373,7 +373,10 @@ footer{
     }
 
     .filtros input, .filtros button {
-        width: 100%; 
+        width: 90%; 
+    }
+    footer{
+        align-items: center;
     }
 }
 
@@ -388,7 +391,7 @@ footer{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 640px){
     #musica, #teatro, #arte, #gastronomia {
         flex-direction: column;
         align-items: center;
@@ -424,7 +427,7 @@ footer{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 640px){
     .contact-methods {
         flex-direction: column;
         gap: 20px;
@@ -445,8 +448,15 @@ footer{
     }
 }
 
-@media (max-width: 480px){
-    footer{
-        align-items: center;
+@media (min-width: 640px) and (max-width: 768px){
+    .contact-methods {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
     }
+    form{
+        width: 90%;
+    }
+    
 }
+
